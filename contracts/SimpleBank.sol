@@ -65,7 +65,7 @@ contract SimpleBank {
       // 1. enroll of the sender of this transaction
       enrolled[msg.sender] = true;
 
-      emit LogEnrolled;
+      emit LogEnrolled();
 
       return enrolled[msg.sender];
     }
